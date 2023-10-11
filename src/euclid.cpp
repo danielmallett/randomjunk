@@ -5,7 +5,6 @@ using namespace std;
 int main(int argc, char** argv){
 	long long x, y, r, tmp, ans;
 	bool verbose;
-	string v;
 
 	verbose = false;
 
