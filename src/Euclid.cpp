@@ -1,3 +1,6 @@
+/* Euclid.cpp calculates the GCD of two integers input from the command line
+ * It takes one extra parameter, verbose, if this is y it will output the steps
+ * taken to standard out. */
 #include <iostream>
 #include <cstdio>
 using namespace std;
@@ -9,17 +12,17 @@ int main(int argc, char** argv){
 	verbose = false;
 
 	if (argc != 4){
-		cout << "usage: euclid a b y|n (verbose)" << endl;
+		cout << "usage: ./euclid a b y|n (verbose)" << endl;
 		return 1;
 	}
 
 	if (sscanf(argv[1], "%lld", &x) != 1){
-		cout << "usage: euclid a b y|n (verbose)" << endl;
+		cout << "usage: ./euclid a b y|n (verbose)" << endl;
 		return 1;
 	}
 
 	if (sscanf(argv[2], "%lld", &y) != 1){
-		cout << "usage: euclid a b y|n (verbose)" << endl;
+		cout << "usage: ./euclid a b y|n (verbose)" << endl;
 		return 1;
 	}
 
